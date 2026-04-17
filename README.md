@@ -581,6 +581,7 @@ Build a platform that provides:
 
 ### Backend
 
+```text
 backend/
 │
 ├── app/
@@ -747,6 +748,7 @@ backend/
 ├── Dockerfile
 ├── docker-compose.yml
 └── README.md
+```
 
 Includes:
 
@@ -761,6 +763,7 @@ Includes:
 
 ### Frontend
 
+```text
 frontend/
 │
 ├── public/                                # Static assets
@@ -772,7 +775,7 @@ frontend/
 │
 ├── src/
 │
-│   ├── app/                               # 🔹 Presentation Layer (like backend api/)
+│   ├── app/                               # Presentation Layer (like backend api/)
 │   │   ├── layout.tsx
 │   │   ├── page.tsx
 │   │   ├── globals.css
@@ -799,34 +802,34 @@ frontend/
 │   │   └── api/
 │   │       └── health/route.ts
 │
-│   ├── core/                              # 🔹 Equivalent to backend core/
+│   ├── core/                              # Equivalent to backend core/
 │   │   ├── config.ts                      # env config
 │   │   ├── security.ts                    # token helpers
 │   │   ├── dependencies.ts                # app providers config
 │   │   ├── constants.ts
 │   │   └── logger.ts
 │
-│   ├── models/                            # 🔹 mirrors backend models (frontend types/models)
+│   ├── models/                            # mirrors backend models (frontend types/models)
 │   │   ├── user.model.ts
 │   │   ├── portfolio.model.ts
 │   │   ├── trade.model.ts
 │   │   ├── stock.model.ts
 │   │   └── strategy.model.ts
 │
-│   ├── schemas/                           # 🔹 validation (zod schemas)
+│   ├── schemas/                           # validation (zod schemas)
 │   │   ├── auth.schema.ts
 │   │   ├── user.schema.ts
 │   │   ├── trading.schema.ts
 │   │   └── portfolio.schema.ts
 │
-│   ├── repository/                        # 🔹 API abstraction layer
+│   ├── repository/                        # API abstraction layer
 │   │   ├── base.repository.ts
 │   │   ├── auth.repository.ts
 │   │   ├── user.repository.ts
 │   │   ├── trading.repository.ts
 │   │   └── market.repository.ts
 │
-│   ├── services/                          # 🔹 Business logic (like backend services)
+│   ├── services/                          # Business logic (like backend services)
 │   │   ├── auth.service.ts
 │   │   ├── user.service.ts
 │   │   ├── trading.service.ts
@@ -835,14 +838,14 @@ frontend/
 │   │   ├── ai.service.ts
 │   │   └── notification.service.ts
 │
-│   ├── store/                             # 🔹 State management (like backend session layer)
+│   ├── store/                             # State management (like backend session layer)
 │   │   ├── auth.store.ts
 │   │   ├── user.store.ts
 │   │   ├── trading.store.ts
 │   │   ├── portfolio.store.ts
 │   │   └── app.store.ts
 │
-│   ├── hooks/                             # 🔹 reusable hooks
+│   ├── hooks/                             # reusable hooks
 │   │   ├── useAuth.ts
 │   │   ├── useUser.ts
 │   │   ├── useTrading.ts
@@ -850,7 +853,7 @@ frontend/
 │   │   ├── useSocket.ts
 │   │   └── useDebounce.ts
 │
-│   ├── ai/                                # 🔹 mirrors backend ai/
+│   ├── ai/                                # mirrors backend ai/
 │   │   ├── agents/
 │   │   │   ├── market-agent.ts
 │   │   │   ├── news-agent.ts
@@ -867,23 +870,23 @@ frontend/
 │   │   └── utils/
 │   │       └── ai-helpers.ts
 │
-│   ├── realtime/                          # 🔹 mirrors backend realtime/
+│   ├── realtime/                          # mirrors backend realtime/
 │   │   ├── manager.ts
 │   │   ├── market-stream.ts
 │   │   └── notification-stream.ts
 │
-│   ├── workers/                           # 🔹 background simulation (optional frontend jobs)
+│   ├── workers/                           # background simulation (optional frontend jobs)
 │   │   ├── market.worker.ts
 │   │   ├── ai.worker.ts
 │   │   └── notification.worker.ts
 │
-│   ├── utils/                             # 🔹 shared utilities
+│   ├── utils/                             # shared utilities
 │   │   ├── helpers.ts
 │   │   ├── validators.ts
 │   │   ├── enums.ts
 │   │   └── exceptions.ts
 │
-│   ├── components/                        # 🔹 UI layer
+│   ├── components/                        # UI layer
 │   │   ├── ui/
 │   │   │   ├── button.tsx
 │   │   │   ├── input.tsx
@@ -900,7 +903,7 @@ frontend/
 │   │       ├── line-chart.tsx
 │   │       └── volume-chart.tsx
 │
-│   ├── tests/                             # 🔹 frontend tests (like backend tests)
+│   ├── tests/                             # frontend tests (like backend tests)
 │   │   ├── auth.test.ts
 │   │   ├── user.test.ts
 │   │   └── market.test.ts
@@ -926,6 +929,7 @@ frontend/
 ├── postcss.config.js
 ├── tailwind.config.ts
 └── README.md
+```
 
 * Next.js App Router
 * Feature-based architecture
@@ -1065,6 +1069,7 @@ documentations/
 * Secrets management
 * AI-based anomaly detection
 
+```
 scripts/
 │
 ├── README.md                     # Overview of all scripts
@@ -1111,7 +1116,7 @@ scripts/
 └── utils/                        # Utility scripts
     ├── cleanup.py
     └── health_check.py
-
+```
 ---
 
 ## Advanced Capabilities
@@ -1340,4 +1345,4 @@ Contributions are welcome. Please follow:
 
 ## License
 
-This project is intended for learning, development, and experimentation purposes.
+This project is intended for development, and experimentation purposes.
